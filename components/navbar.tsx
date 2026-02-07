@@ -61,7 +61,7 @@ export function Navbar() {
             ))}
             <Link
               href="#join"
-              className="px-4 py-2 rounded-full bg-violet-500 text-white text-sm font-medium hover:bg-violet-600 active:bg-violet-700 transition-all duration-300 hover:scale-105 active:scale-95 shadow-lg hover:shadow-xl hover:shadow-violet-500/20"
+              className="px-4 py-2 rounded-full bg-violet-500 text-white text-sm font-medium hover:bg-violet-600 active:bg-violet-700 transition-colors duration-300 shadow-lg hover:shadow-xl hover:shadow-violet-500/20"
             >
               Join R&D
             </Link>
@@ -70,7 +70,7 @@ export function Navbar() {
           {/* Mobile menu button */}
           <button
             type="button"
-            className="md:hidden p-2 text-muted-foreground hover:text-foreground transition-colors duration-200 active:scale-95 transform"
+            className="md:hidden p-2 text-muted-foreground hover:text-foreground transition-colors duration-200"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle navigation menu"
             aria-expanded={mobileMenuOpen}
@@ -91,7 +91,7 @@ export function Navbar() {
                     "text-sm font-medium transition-all duration-200 px-4 py-3 rounded-lg mx-2",
                     pathname === item.href
                       ? "text-violet-400 bg-violet-500/10 border border-violet-500/20"
-                      : "text-muted-foreground hover:text-foreground hover:bg-white/5 active:scale-95 transform"
+                      : "text-muted-foreground hover:text-foreground hover:bg-white/5"
                   )}
                   onClick={() => setMobileMenuOpen(false)}
                 >
@@ -101,7 +101,7 @@ export function Navbar() {
               <div className="px-2 pt-2">
                 <Link
                   href="#join"
-                  className="block px-4 py-3 rounded-full bg-violet-500 text-white text-sm font-medium hover:bg-violet-600 active:bg-violet-700 transition-all duration-200 active:scale-95 transform text-center"
+                  className="block px-4 py-3 rounded-full bg-violet-500 text-white text-sm font-medium hover:bg-violet-600 active:bg-violet-700 transition-colors duration-200 text-center"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   Join R&D

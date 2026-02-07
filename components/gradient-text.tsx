@@ -19,8 +19,8 @@ export function GradientText({
 }: GradientTextProps) {
   const gradientClass =
     variant === "logo"
-      ? "bg-gradient-to-r from-orange-400 via-yellow-400 to-purple-500 bg-clip-text text-transparent"
-      : "bg-gradient-to-r from-cyan-400 via-teal-400 to-purple-500 bg-clip-text text-transparent"
+      ? "bg-gradient-to-r from-white via-violet-200 to-violet-500 bg-clip-text text-transparent"
+      : "bg-gradient-to-r from-white via-violet-300 to-violet-500 bg-clip-text text-transparent"
 
   return (
     <Component className={cn(gradientClass, className)} id={id}>

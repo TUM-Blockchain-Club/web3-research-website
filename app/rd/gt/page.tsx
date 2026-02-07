@@ -49,7 +49,7 @@ export default function GTPage() {
       <StickyNav items={stickyNavItems} />
 
       {/* Mission Section */}
-      <section id="mission" className="py-20 px-4 sm:px-6 lg:px-8 scroll-mt-32">
+      <section id="mission" className="py-20 px-4 sm:px-6 lg:px-8 scroll-mt-24">
         <div className="max-w-4xl mx-auto">
           <GradientText as="h2" className="text-3xl md:text-4xl font-bold text-center mb-8">
             Mission
@@ -65,7 +65,7 @@ export default function GTPage() {
       </section>
 
       {/* Collaborations Section */}
-      <section id="collaborations" className="py-20 px-4 sm:px-6 lg:px-8 bg-card scroll-mt-32">
+      <section id="collaborations" className="py-20 px-4 sm:px-6 lg:px-8 bg-card scroll-mt-24">
         <div className="max-w-4xl mx-auto">
           <GradientText as="h2" className="text-3xl md:text-4xl font-bold text-center mb-12">
             Open Collaboration
@@ -80,7 +80,7 @@ export default function GTPage() {
       </section>
 
       {/* Join Section */}
-      <section id="join" className="py-20 px-4 sm:px-6 lg:px-8 scroll-mt-32">
+      <section id="join" className="py-20 px-4 sm:px-6 lg:px-8 scroll-mt-24">
         <div className="max-w-3xl mx-auto">
           <GradientText as="h2" className="text-3xl md:text-4xl font-bold text-center mb-8">
             Join GT

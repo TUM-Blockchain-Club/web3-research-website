@@ -17,7 +17,7 @@
   --secondary: #1a1a1a;
   --secondary-foreground: #ffffff;
   --muted: #171717;
-  --muted-foreground: rgba(255, 255, 255, 0.65);
+  --muted-foreground: rgba(255, 255, 255, 0.75);
   --accent: #1a1a1a;
   --accent-foreground: #ffffff;
   --destructive: #ef4444;
@@ -58,7 +58,7 @@
   --secondary: #1a1a1a;
   --secondary-foreground: #ffffff;
   --muted: #171717;
-  --muted-foreground: rgba(255, 255, 255, 0.65);
+  --muted-foreground: rgba(255, 255, 255, 0.75);
   --accent: #1a1a1a;
   --accent-foreground: #ffffff;
   --destructive: #ef4444;
@@ -131,5 +131,38 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Focus visible styles for better keyboard navigation */
+  *:focus-visible {
+    outline: 2px solid rgba(139, 92, 246, 0.8);
+    outline-offset: 2px;
+  }
+
+  /* Reduce motion for users who prefer it */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  /* Hide scrollbar for sticky nav overflow */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
   }
 }
