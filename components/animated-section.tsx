@@ -1,7 +1,7 @@
 'use client'
 
 import { ReactNode } from 'react'
-import { motion } from 'framer-motion'
+import { motion, type Variants } from 'framer-motion'
 import { useInView } from '@/hooks/useInView'
 import { cn } from '@/lib/utils'
 
@@ -20,7 +20,7 @@ export function AnimatedSection({
 }: AnimatedSectionProps) {
   const { ref, isInView } = useInView({ threshold: 0.1, triggerOnce: true })
 
-  const variants = {
+  const variants: Variants = {
     hidden: {
       opacity: 0,
       y: direction === 'up' ? 40 : direction === 'down' ? -40 : 0,
